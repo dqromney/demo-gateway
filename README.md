@@ -26,3 +26,9 @@
   - `mvn spring-boot:run`
 
 6. Check Eureka at [http://localhost:8010](http://localhost:8010).  The GATEWAY should now be listed as one the services.  If you wish, you can click on the link to the right of the GATEWAY server.  Replace the "/info" with "/" and refresh several times.  You can observe the randomly generated sentence.  This can also be invoked at [http://localhost:8080/](http://localhost:8080/).
+
+  **Sample Output:**
+  
+*Dynamically Generated Sentence*
+
+Bryan transport an reasonable man
