@@ -35,8 +35,12 @@ Bryan transport an reasonable man
 
 **Reflection**
 
-1.  How does the application know where the individual word services are?  *Zuul automatically uses Eureka service discovery.*
-2.  How did this application know how to contact Eureka?  *We used Spring Cloud Config, and the server / repository we are using knows the location.*
-3.  Why do we get 304s randomly on the AJAX requests?  *Since the word values are randomly generated, 304s only occur in the unlikely event that the server returns an identical value to what it returned in the previous request.*  
-4.  ETags are a great way to optimize web / REST applications, but the ETag usage demonstrated here is impractical for two reasons.  *1) the values we are receiving are intended to be random, 304s only occur because our set of seed values is relatively small, and 2) the ETag itself is far larger than any of our words, so we actually consume more bandwidth than we save!*
+1.  How does the application know where the individual word services are?  
+*Zuul automatically uses Eureka service discovery.*
+2.  How did this application know how to contact Eureka?  
+*We used Spring Cloud Config, and the server / repository we are using knows the location.*
+3.  Why do we get 304s randomly on the AJAX requests?  
+*Since the word values are randomly generated, 304s only occur in the unlikely event that the server returns an identical value to what it returned in the previous request.*  
+4.  ETags are a great way to optimize web / REST applications, but the ETag usage demonstrated here is impractical for two reasons.  
+*1) the values we are receiving are intended to be random, 304s only occur because our set of seed values is relatively small, and 2) the ETag itself is far larger than any of our words, so we actually consume more bandwidth than we save!*
 5.  This web site uses Thymeleaf, JQuery, and Bootstrap, though the usage of each is very rudimentary.  The `application.properties` file has a setting that allows the Thymeleaf template changes to be loaded immediately, which is useful in development.
