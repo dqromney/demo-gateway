@@ -28,11 +28,11 @@
     <bytecodeTargetLevel target="1.8">
       <module name="commmon-eureka-server" target="1.8" />
       <module name="common-config-server" target="1.8" />
-      <module name="config-server" target="1.8" />
-      <module name="eureka-server" target="1.8" />
+      <module name="config-server" target="1.7" />
+      <module name="eureka-server" target="1.7" />
       <module name="gateway" target="1.8" />
       <module name="lab-9-gateway-solution" target="1.8" />
-      <module name="word-server" target="1.8" />
+      <module name="word-server" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
